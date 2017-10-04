@@ -1,6 +1,6 @@
 <?php
-	error_reporting(E_ALL);
-    ini_set( 'display_errors','1');
+	//error_reporting(E_ALL);
+    //ini_set( 'display_errors','1');
     session_start();
 
 if (!isset($_SESSION["carrello"])) {
@@ -156,7 +156,7 @@ $(function() {
 			
 
 			<!-- Inizio #main (contenuti principali) -->
-<div id="main">
+<div id="main" class="col-xs-12 col-sm-9 colonna">
 			
   <h2>Esempi di personalizzazioni</h2>  
   <br>
@@ -201,7 +201,7 @@ $(function() {
 			<!-- Inizio contenuti secondari -->
 
   <div>
-			<aside id="social-widget">
+			<aside class="col-md-3 colonna">
 				<!-- Inizio sezione categorie e tag -->
 				<div class="widget categorie-widget" id="categorie">
 					<h3>Prodotti</h3>

@@ -180,6 +180,7 @@ $(function() {
 
 			<!-- Inizio #main (contenuti principali) -->
 			<div id="main">
+			 <div id="row">
 				<!-- Inizio sezione ultimi articoli -->
 				<article class="post" id="post-1">
 					<time datetime="2017-09-11">
@@ -212,7 +213,7 @@ $(function() {
 						Nuove borse e pochette in pelle.
 					</p>
 				</article>
-			
+			 </div>
 				<!-- Fine sezione articoli -->
 			</div>
 			

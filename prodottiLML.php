@@ -129,7 +129,7 @@ if (!isset($_SESSION["carrello"])) {
 </nav>
     
 
-    <div class="main">
+    <div class="row">
       <div id="colonna1" class="col-xs-12 col-sm-9 colonna">
         <div class="row">
           <div class="col-xs-12 colonna">
@@ -227,8 +227,6 @@ if (!isset($_SESSION["carrello"])) {
 				</div>
 				<!-- Fine sezione categorie e tag -->
 			</aside>
-			
-			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </div>
      
      

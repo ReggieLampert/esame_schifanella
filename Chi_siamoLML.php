@@ -156,7 +156,7 @@ $(function() {
 
 
 			<!-- Inizio #main (contenuti principali) -->
-			<div id="main" class="col-xs-12 col-sm-9 colonna">
+			<div id="row" class="col-xs-12 col-sm-9 colonna">
 				<!-- Inizio sezione chi siamo-->
 					<article>
 					<h2>Gli inizi</h2>

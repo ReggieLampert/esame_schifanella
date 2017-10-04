@@ -56,6 +56,7 @@
        <body>
        	<div id="logo">
 					<img alt="logo" src="img/logo-trasparente.png">
+					<img alt="titolo" src="img/scrittalogo.png">
 				</div>
 				
     <nav class="navbar navbar-default">
@@ -93,8 +94,25 @@
           <li><a href="carrelloLML.php"> Carrello (<?php echo count($carrello)?>)</a></li>
 		  <li><a href="ContattiLML.html">Contatti</a></li>
 		  </div>
+        <!-- Inizio box di ricerca -->
+		<form class="navbar-form navbar-right" role="search" action="ricerca.php" method="post">
+          <div class="input-group">
+            <input name="ricerca" type="text" class="form-control" placeholder="Search">
+            <span class="input-group-btn">
+            <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            </span>
+           </div>
+       </form>
+		<!-- Fine box di ricerca -->
+	     
+	   </ul>
+	   	
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  
+</nav>
        
-        <div class="row">
+        <div class="main">
           <div id="colonna1" class="col-xs-12 col-sm-9 colonna">
         <div class="row">
           <div class="col-xs-12 colonna">
@@ -121,12 +139,84 @@
                     echo "</p>";
               }
             ?>
-        <div class="page-header">
-                 
-                </div>
+            
+            </div>
+           </div>
+          </div>
+         </div>
+         
+         
+         <div>
+     <aside id="social-widget">
+				<!-- Inizio sezione categorie e tag -->
+				<div class="widget categorie-widget" id="categorie">
+					<h3>Prodotti</h3>
+					<ul>
+						<li>
+							<a href="AlbumAgende.php">Album e Agende</a>
+						</li>
+						<li>
+							<a href="Borse.php">Borse</a>
+						</li>
+						<li>
+							<a href="Zaini.php">Zaini</a>
+						</li>
+						<li>
+							<a href="Cartelle.php">Cartelle</a>
+						</li>
+						<li>
+							<a href="Varie.php">Varie</a>
+						</li>
+						<li>
+							<a href="PersonalizzazioniLML.php">Personalizzazioni</a>
+						</li>
+					</ul>
+					
+					<h3>Social</h3>
+						<!-- Inizio link e icone social -->
+				<div class="widget social-widget" id="social">
+					<ul>
+                        <li>
+							<a href="https://www.facebook.com/lemanielalunapiacenza/" id="facebook"> Seguici su Facebook </a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/lemanielaluna/?hl=it" id="instagram"> Seguici su Instagram </a>
+						</li>
+						<li>
+							<a href="#" id="mailinglist"> Mailing list </a>
+						</li>
+						
+					</ul>
+				</div>
+				<!-- Fine link e icone social -->
+				</div>
+				<!-- Fine sezione categorie e tag -->
+			</aside>
+			
+  </div>   
+            
+      
   <script src="js/bootstrap.min.js"></script>
 			<!-- Fine contenuti secondari -->
-     
+     <!-- footer -->
+	    <div>	
+			<footer>
+				<ul id="legal">
+					<li>
+						Le Mani e La Luna di Longinotti &amp; C. snc - P.zza Chiostri del Duomo 19-21, Piacenza (PC) </li>
+					<li> P.IVA 01059120335 - Iscr. Trib. di Piacenza n°12292 - Iscr. Reg. Ditte n°124431 
+					</li>
+					<li>
+						Tel: <a href="tel:+390523338117">+39 0523 338117</a>
+					</li>
+					<li>
+						Written by Anna Buonocore and Sara Mastaglia
+					</li>
+				</ul>
+			</footer>
+		</div>
+		<!-- Fine footer -->
+
+		</body>
     
-      </body>
       </html>

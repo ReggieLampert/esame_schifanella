@@ -1,6 +1,6 @@
 <?php
-  error_reporting(E_ALL);
-  ini_set( 'display_errors','1');
+  //error_reporting(E_ALL);
+  //ini_set( 'display_errors','1');
 
 session_start();
 ?>
@@ -17,14 +17,16 @@ session_start();
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
         
 
-		<link rel="stylesheet" href="css/style.css">
+		
          <!--foglio di stile per bootstrap-colonne-->
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
 		<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
-        
-		<script type="text/javascript">
-
+       
+        <link rel="stylesheet" href="css/style.css">
+	    
+	    <script type="text/javascript"> 
+		  
   $(document).ready(function(e) {
 
     $("#svuotacarrello").click(function(event) {
@@ -35,6 +37,7 @@ session_start();
   });
 
   </script>
+  
 </head>
 <body>
 
@@ -183,7 +186,6 @@ session_start();
               echo "<button class='btn' type='button' id='svuotacarrello'>Svuota il carrello</button>";
               echo "</form>";
 
-              echo "<p>Informativa sul regolamento di vendita <a href='#myModal' role='button' class='btn' data-toggle='modal'>link</a></p>";
 
             } else {
               echo "<p>Il tuo carrello &egrave; vuoto!</p>";
@@ -237,9 +239,9 @@ session_start();
 				</div>
 				<!-- Fine link e icone social -->
 				</div>
-				<!-- Fine sezione categorie e tag -->			
-			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+				<!-- Fine sezione categorie e tag-->	
   	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
      </div>
        
 
