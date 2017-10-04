@@ -1,14 +1,12 @@
 <?php
-        error_reporting(E_ALL);
-        ini_set( 'display_errors','1');
+        //error_reporting(E_ALL);
+        //ini_set( 'display_errors','1');
 
         session_start();
 
         if (!isset($_SESSION["carrello"])) {
           $_SESSION["carrello"]="";
         }
-
-        //$_SESSION["carrello"]="7887";
 
         if ($_SESSION["carrello"]=="") {
           $carrello=array();
@@ -41,8 +39,9 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
 		<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
-
+        <script src="js/bootstrap.js"></script>
       <script>
+		  
     var foto=false;
 
     var aggiungifoto=function() {
@@ -58,8 +57,6 @@
       if (document.documentElement.clientWidth>=768 && foto==false) {
         aggiungifoto();
       }
-
-
 
     });
 
@@ -133,14 +130,9 @@
 				<!-- Fine navigazione principale -->
        
         <div class="row">
-          <div id="colonna1" class="col-xs-12 col-sm-9 colonna">
-        <div class="row">
-          <div class="col-xs-12 colonna">
-                <div class="page-header">
+               <div id="colonna1" class="col-xs-12 col-sm-9 colonna">
                   <h3>Risultati della ricerca</h3>
-                </div>
-            </div>
-          </div>
+             
             <?php
 
               if (!($risultato = $connessione->query($query_ricerca)))
@@ -162,11 +154,10 @@
 
                     echo "<div class='span3'>";
                     echo "<article class='schedavg' data-src='".$foto."'>";
-                    echo "<a href='dettaglio_prodotto.php?id=$idprodotti'><img class='img-thumbnail prodotto' src='img/prodotti/$foto' alt=''/></a>";
-                    echo "<h5><a href='dettaglio_prodotto.php?id=$idprodotti'>$nome </a></h5>";
+                    echo "<h5><a href='dettaglio_prodottoLML.php?id=$idprodotti'>$nome </a></h5>";
                     echo "<p>$categoria";
                     echo " <span class='badge badge-success'>EUR $prezzo</span>";
-                    echo "<a href='aggiungicarrello.php?id=".$idprodotti."'><span class='glyphicon glyphicon-shopping-cart' aria-hidden='true'></span></a>";
+                    echo "<a href='aggiungicarrelloLML.php?id=".$idprodotti."'><span class='glyphicon glyphicon-shopping-cart' aria-hidden='true'></span></a>";
                     echo "</p>";
                     echo "</article>";
                     echo "</div>";
@@ -188,8 +179,7 @@
               }
 
             ?>
-
-          </div>
+			</div>
         </div>
         
        <!-- footer -->
